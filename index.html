@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Quiz Page</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #d0dcea; /* Light blue background */
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 20px auto;
+            max-width: 300px;
+            background-color: #83a1a5; /* White background */
+            padding: 20px;
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 10px; /* Rounded corners */
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px; /* Rounded corners */
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .duration {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quiz Management System</h1>
+    <div class="duration">Time Duration: 2hrs</div>
+    <img src="SR.FPEG.jpg" alt="SRU College Logo" height="100px" width="150px"><br><br>
+
+
+    <form>
+        <label for="studentName">Student Name:</label>
+        <input type="text" id="studentName" name="studentName" required><br>
+
+        <label for="rollNumber">Roll Number:</label>
+        <input type="text" id="rollNumber" name="rollNumber" required><br>
+
+        <label for="branch">Branch:</label>
+        <input type="text" id="branch" name="branch" required><br>
+
+        <label for="Section">Section:</label>
+            <input type="text" id="Section" name="Section" ><br>
+
+
+        <button type="button" id="startQuiz">Start Quiz</button>
+    </form>
+</body>
+</html>
